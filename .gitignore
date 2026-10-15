@@ -1,0 +1,13 @@
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ipynb_checkpoints/
+.venv/
+.env
+
+# Generated experiment artifacts
+results/questions.jsonl
+results/generations.jsonl
+results/confidence.csv
+results/evaluated_predictions.csv
+
