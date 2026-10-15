@@ -1,0 +1,25 @@
+model:
+  name: Qwen/Qwen2.5-1.5B-Instruct
+
+dataset:
+  name: mandarjoshi/trivia_qa
+  config: rc.nocontext
+  split: validation
+
+experiment:
+  n_questions: 20
+  seed: 42
+  max_new_tokens: 16
+  n_samples: 5
+  sampling_temperature: 0.7
+  n_bins: 10
+  calibration_split_ratio: 0.5
+  n_bootstrap: 1000
+
+outputs:
+  questions: results/questions_quick.jsonl
+  generations: results/generations_quick.jsonl
+  confidence: results/confidence_quick.csv
+  evaluated_predictions: results/evaluated_predictions_quick.csv
+  metrics: results/metrics_quick.json
+  figures_dir: results/figures/quick

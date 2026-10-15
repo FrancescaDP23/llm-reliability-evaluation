@@ -6,8 +6,8 @@ __pycache__/
 .env
 
 # Generated experiment artifacts
-results/questions.jsonl
-results/generations.jsonl
-results/confidence.csv
-results/evaluated_predictions.csv
-
+results/questions*.jsonl
+results/generations*.jsonl
+results/confidence*.csv
+results/evaluated_predictions*.csv
+results/metrics_quick.json
